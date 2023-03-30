@@ -22,19 +22,19 @@ package for_HW_Java.Homework1;
 import java.util.Scanner;
 
 public class task2 {
-    public static void main(String[] args){
-    Scanner iScanner = new Scanner(System.in);
-    System.out.printf("Введите количество чисел N и целые числа n: ");
-    int n = iScanner.nextInt();
-    int[] arr = new int[n];
-    for (int i = 0; i < arr.length; i++){
-        arr[i] = iScanner.nextInt();
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("Введите количество чисел N и целые числа n: ");
+        int n = iScanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = iScanner.nextInt();
+            }
+        System.out.printf("Введите множитель X: ");
+        int x = iScanner.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = arr[i] * x;
+            System.out.println(arr[i]);
+            }   
     }
-    System.out.printf("Введите множитель X: ");
-    int x = iScanner.nextInt();
-    for (int i = 0; i < arr.length; i++){
-        arr[i] = arr[i] * x;
-        System.out.println(arr[i]);
-        }   
-}
 }
